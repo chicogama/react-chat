@@ -8,22 +8,14 @@ interface AskInputProps {
     name: string;
     value: string;
     onChange: ChangeEventHandler<HTMLTextAreaElement>;
-    label: string;
     placeholder: string;
 }
 
-function AskInput({
-    name,
-    value,
-    onChange,
-    label,
-    placeholder,
-}: AskInputProps) {
+function AskInput({ name, value, onChange, placeholder }: AskInputProps) {
     return (
         <div className="container">
             <form action="">
                 <div className="ask-area">
-                    <label className="label">{label}</label>
                     <Textarea
                         appearance="outline"
                         placeholder={placeholder}

@@ -8,15 +8,16 @@ function App() {
 
     return (
         <div className="container">
-            <div className="App">
+            <div className="main">
                 <ChatHistory></ChatHistory>
-                <AskInput
-                    value={menssage}
-                    onChange={(event) => setMessage(event?.target.value)}
-                    name="message"
-                    label="Teste"
-                    placeholder="Faça uma pegunta"
-                ></AskInput>
+                <div className="input-message">
+                    <AskInput
+                        value={menssage}
+                        onChange={(event) => setMessage(event?.target.value)}
+                        name="message"
+                        placeholder="Faça uma pegunta"
+                    ></AskInput>
+                </div>
             </div>
         </div>
     );
